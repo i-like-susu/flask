@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+i am chen
+{{name}}
+<p>
+    {% if user %}
+    {{ user.nickname}} QQ:{{user.QQ}} 邮箱：{{user.email}}
+    {% endif %}
+</p>
+
+<p>
+    {% for i in numlist %}
+    {{ i }}
+    {% endfor %}
+</p>
+
+<p>数据库查询
+</p>
+
+<p>
+    {% for item in result %}
+    {{ item['User'] }}
+    {% endfor %}
+</p>
+</body>
+</html>
